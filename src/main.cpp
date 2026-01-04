@@ -4,7 +4,7 @@
 #include "delivery.cpp"
 
 using namespace std;
-                                     //all member
+                                     //all member mutual 
 int main() {
   int choice;
  cout << "   Welcome to Cafe System   \n"
