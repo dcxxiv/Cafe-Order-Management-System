@@ -2,12 +2,12 @@
 #include <fstream>
 #include <sstream>
 using namespace std;
-
+                    //dono files ka path eneter kiya ..taka phly menu read kry phir order dy.
 #define MENU_FILE "menu.csv"
 #define ORDER_FILE "orders.csv"
 
 
-int allowedIDs[10] = {1111,1112,1113,1114,1115,1116,1117,1118,1119,1200};
+int allowedIDs[10] = {1111,1112,1113,1114,1115,1116,1117,1118,1119,1200};     //order range fix kiya
 
 
 bool checkOrderID(string orderID) {
@@ -48,7 +48,7 @@ void addOrder() {
     string orderID;
     string customerName;
     int itemID;
-    int quantity;
+    int quantity;                        //coustomer sy pouchy ga order
 
     cout << "\nWhat would you like to eat?\n";
 
@@ -56,7 +56,7 @@ void addOrder() {
     cin >> orderID;
 
     if (!checkOrderID(orderID)) {
-        cout << "Invalid Order ID!\n";
+        cout << "Invalid Order ID!\n";   
         return;
     }
 
@@ -69,7 +69,7 @@ void addOrder() {
 
     int price = findPrice(itemID);
     if (price == -1) {
-        cout << "Invalid Item ID!\n";
+        cout << "Invalid Item ID!\n";              //if item id is not acc to menu it eill show invalid
         return;
     }
 
@@ -86,9 +86,9 @@ void addOrder() {
     cout << "Thanks for your order!\n";
 }
 
-
+                                             //i have enter CRUD option ...
+    ifstream orderFile(ORDER_FILE);                        //coustomer order cancel upload or delete kr sakta hai or apna order bhi dekh sakhta hai
 void showOrders() {
-    ifstream orderFile(ORDER_FILE);
     string line;
 
     cout << "\nOrderID  CustomerName  ItemID  Quantity  Price  Total\n";
@@ -237,3 +237,4 @@ int main() {
 
     return 0;
 }
+
