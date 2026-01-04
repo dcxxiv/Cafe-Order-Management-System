@@ -23,5 +23,5 @@ All data is saved to a file for persistence.
 - `src/main.cpp` → main program  
 - `src/menu.cpp` → menu functions  
 - `src/order.cpp` → order functions  
-- `src/delivery.cpp` → delivery/cancel order functions  
+- `src/delivery.cpp` → delivery order functions  
 - `docs/project_description.pdf` → project details
