@@ -7,7 +7,7 @@ All data is saved to a file for persistence.
 
 ## Team Members & Roles
 - Hamna – Menu module (25021519-155)  
-- Rahma Noor – Order module (25021519-239)  
+- Rahma Noor – Order module (25021519-239)  (Group leader)
 - Zuha Fatima – Delivery module (25021519-056)  
 
 ## Features
